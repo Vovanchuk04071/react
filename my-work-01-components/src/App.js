@@ -1,6 +1,6 @@
 // import React from 'react';
 // import Profile from './Component/Profile';
-// import user from './user.json';
+import user from './user.json';
 console.log(user);
 
 const App = () => (
