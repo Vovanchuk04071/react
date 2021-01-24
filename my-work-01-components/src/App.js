@@ -1,20 +1,21 @@
-// import React from 'react';
-// import Profile from './Component/Profile';
+import React from 'react';
+import './style.css';
+// import Profile from './Component/Profile/Profile';
+import Panel from './Component/Statistics/Statistics';
+import statisticalData from './statistical-data.json';
 import user from './user.json';
-console.log(user);
 
 const App = () => (
-  <ul>
-    <li>
-      <Profile
-        name={user.name}
-        tag={user.tag}
-        location={user.location}
-        avatar={user.avatar}
-        stats={user.stats}
-      />
-    </li>
-  </ul>
+  <>
+    {/* <Profile
+      name={user.name}
+      tag={user.tag}
+      location={user.location}
+      avatar={user.avatar}
+      stats={user.stats}
+    /> */}
+    <Panel title="Upload stats" statistics={statisticalData} />
+  </>
 );
 
 export default App;
