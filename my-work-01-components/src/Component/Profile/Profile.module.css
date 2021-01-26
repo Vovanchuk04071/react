@@ -10,12 +10,12 @@
 
 .profile {
     display: grid;
-   justify-content: center;
    text-align: center;
-    max-width: 250px;
+   align-content: space-between;
+    width: 250px;
     height: 330px;
     background-color: #fff;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
 .description{
@@ -46,17 +46,20 @@ color: #a1abb6;
 
 .stats {
     display: grid;
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
+    justify-content: space-between;
     height: 75px;
     background-color: #f3f6f9;
     align-items: center;
-    padding: 0;    
+    padding: 0;   
+    margin: 0;
 }
 .stats li{
-
+display: flex;
     padding-top: 20px;
-    align-items: center;
+    flex-direction: column;
     height: 100%;
     border: 1px solid #e4e9f0;
+    
 }

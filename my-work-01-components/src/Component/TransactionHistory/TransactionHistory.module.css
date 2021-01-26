@@ -1,0 +1,30 @@
+.transaction__history{
+    display: grid;
+}
+
+.header {
+    display: grid;
+    padding:  0 40px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 70px;
+    
+    grid-column-gap: 50px;
+    justify-items: center;
+    align-items: center;
+    background-color: #00bcd5;
+}
+
+.item {
+    composes: header;
+    display: grid;
+    border: 1px solid silver;
+    
+}
+
+.item:nth-child(odd) {
+    background-color: #fff;
+}
+
+.item:nth-child(even) {
+    background-color: #ecf1f4;
+}

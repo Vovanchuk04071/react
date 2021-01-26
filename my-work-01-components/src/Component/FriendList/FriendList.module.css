@@ -1,0 +1,7 @@
+ .friend__list{
+     margin: 0;
+     padding: 20px;
+     display: grid;
+     grid-gap: 15px;
+     background-color: #f9f9f9;
+ }

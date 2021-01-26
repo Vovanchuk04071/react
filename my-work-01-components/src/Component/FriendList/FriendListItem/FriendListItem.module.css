@@ -1,0 +1,48 @@
+.item {
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+
+    place-content: center start;
+    align-items: center;
+    grid-column-gap: 18px;
+    
+}
+
+.status {
+    display: grid;
+    background-color: green;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 18px;
+}
+
+.active {
+    composes: status;
+    background-color: green;
+}
+
+.disable {
+    composes: status;
+    background-color: red;
+}
+
+.avatar {
+    display: grid;
+    width: 100px;
+    margin: 8px 0;
+    
+}
+
+.name{
+    display: grid;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px 7px rgba(34, 60, 80, 0.2);
+    transition: box-shadow 0.5s, transform 0.5s;
+  }

@@ -1,0 +1,16 @@
+.stat__list{
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0;
+}
+
+.item{
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 60px;
+    border: 1px solid olive;
+    align-content: center;
+
+}
