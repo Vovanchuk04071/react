@@ -22,7 +22,7 @@ const StatisticsItem = ({ label, percentage }) => (
 );
 
 StatisticsList.propTypes = {
-  statistics: PropTypes.array,
+  statistics: PropTypes.array.isRequired,
 };
 
 StatisticsItem.propTypes = {

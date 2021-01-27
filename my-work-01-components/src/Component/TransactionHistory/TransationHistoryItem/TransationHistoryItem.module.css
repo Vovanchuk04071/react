@@ -1,8 +1,5 @@
-.transaction__history{
-    display: grid;
-}
 
-.header {
+.item {
     display: grid;
     padding:  0 40px;
     grid-template-columns: repeat(3, 1fr);
@@ -10,5 +7,14 @@
     grid-column-gap: 50px;
     justify-items: center;
     align-items: center;
-    background-color: #00bcd5;
+    border: 1px solid silver;
+    
+}
+
+.item:nth-child(odd) {
+    background-color: #fff;
+}
+
+.item:nth-child(even) {
+    background-color: #ecf1f4;
 }

@@ -3,8 +3,9 @@ import style from './FriendListItem.module.css';
 import PropTypes from 'prop-types';
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
-  const activeClass =
-    isOnline === true ? style.active : style.disable;
+  const activeClass = isOnline
+    ? style.active
+    : style.disable;
   return (
     <li className={style.item}>
       <span className={activeClass}></span>

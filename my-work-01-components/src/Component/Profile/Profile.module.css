@@ -20,7 +20,7 @@
 
 .description{
     display: grid;
-    justify-items: center;
+    justify-items: center; 
 }
 
 .avatar {
@@ -31,16 +31,16 @@
 
 .name {
     font-weight: 600;
-    margin:0 0 10px 0;
+    margin-bottom: 10px;
 }
 
 .tag{
-    margin:0 0 10px 0;
+    margin-bottom: 10px;
 color: #a1abb6;
 }
 
 .location{
-    margin:0 0 50px 0;
+    margin-bottom: 50px;
     color: #a1abb6;
 }
 
@@ -48,10 +48,8 @@ color: #a1abb6;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
-    justify-content: space-between;
     height: 75px;
     background-color: #f3f6f9;
-    align-items: center;
     padding: 0;   
     margin: 0;
 }
